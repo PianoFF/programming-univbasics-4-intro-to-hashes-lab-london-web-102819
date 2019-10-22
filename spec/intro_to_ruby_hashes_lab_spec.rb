@@ -64,7 +64,7 @@ describe "reading data from a hash" do
       expect(read_from_hash({name: 'Steve'}, :name)).to eq('Steve')
       expect(read_from_hash({'name' => 'Tzvi'}, 'name')).to eq('Tzvi')
     end
-<<<<<<< HEAD
+
 # def read_from_hash (hash, key)
 #   if hash["key"]
 #     puts hash["key"]
