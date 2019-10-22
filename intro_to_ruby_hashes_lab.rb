@@ -40,6 +40,17 @@ def read_from_hash (hash, key)
   hash[key]
 end
 
+#FF solution fixed! !!!!!!!!watch the syntax details!
+# def read_from_hash (hash, key)
+#   if hash[key]
+#     puts hash[key]
+#   else
+#   hash[key]
+# end
+# 
+# end
+
+puts read_from_hash({ height: '6 ft', weight: '160 lbs' }, :height)
 def update_counting_hash(hash, key)
   if hash.has_key? (key)
      hash[key] += 1
