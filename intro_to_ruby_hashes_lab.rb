@@ -22,8 +22,14 @@ def id_generator
   }
 end
 
-def my_hash_creator(key, value)
-   {key => value}
+
+# def my_hash_creator(key, value)
+  #  {key => value}
+def my_hash_creator(para1, para2)
+  new_hash = {
+    para1 => para2 #if ":para1", or "para1" or "para1:" _ interchanging the parameter to literally those keys
+  }
+
 end
 
 def read_from_hash (hash, key)
@@ -33,6 +39,17 @@ def read_from_hash (hash, key)
   hash[key]
 end
 
+#FF solution fixed! !!!!!!!!watch the syntax details!
+# def read_from_hash (hash, key)
+#   if hash[key]
+#     puts hash[key]
+#   else
+#   hash[key]
+# end
+# 
+# end
+
+puts read_from_hash({ height: '6 ft', weight: '160 lbs' }, :height)
 def update_counting_hash(hash, key)
   if hash.has_key? (key)
      hash[key] += 1
