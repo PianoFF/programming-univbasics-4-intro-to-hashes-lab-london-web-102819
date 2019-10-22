@@ -24,7 +24,11 @@ describe "working with hashes" do
         expect(pioneer[:name]).to eq("Grace Hopper")
       end
     end
-
+# def pioneer
+#   hash ={
+#     :name => "Grace Hopper"
+#   }
+# end
     describe "id_generator" do
       it "creates and returns a hash with a key :id and a random number assigned to the value" do
         expect(id_generator).to be_a Hash
@@ -32,7 +36,11 @@ describe "working with hashes" do
         expect(id_generator[:id]).to be > 0
       end
     end
-
+# def id_generator
+#   has ={
+#     :id => 192
+#   }
+# end
     describe "my_hash_creator" do
       it "accepts a key and a value as parameters and returns a hash with this key/value pair inside" do
         expect(my_hash_creator(:name, 'Grace Hopper')).to be_a(Hash)
@@ -43,6 +51,11 @@ describe "working with hashes" do
     end
   end
 end
+# def my_hash_creator(para1, para2)
+#   new_hash = {
+#     para1: para2
+#   }
+# end
 
 describe "reading data from a hash" do
   describe "read_from_hash" do
@@ -50,7 +63,11 @@ describe "reading data from a hash" do
       expect(read_from_hash({name: 'Steve'}, :name)).to eq('Steve')
       expect(read_from_hash({'name' => 'Tzvi'}, 'name')).to eq('Tzvi')
     end
-
+# def read_from_hash (hash, key)
+#   if hash["key"]
+#     puts hash["key"]
+#   end
+# end
     it "returns nil if the key is not found in the provided hash" do
       expect(read_from_hash({age: 31}, :name)).to eq(nil)
     end
