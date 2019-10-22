@@ -27,7 +27,7 @@ end
   #  {key => value}
 def my_hash_creator(para1, para2)
   new_hash = {
-    para1 => para2
+    para1 => para2 #if ":para1", or "para1" or "para1:" _ interchanging the parameter to literally those keys
   }
 
 end
