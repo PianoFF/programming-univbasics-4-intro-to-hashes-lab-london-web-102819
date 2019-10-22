@@ -25,12 +25,11 @@ end
 # <<<<<<< HEAD
 def my_hash_creator(key, value)
    {key => value}
-# =======
-# # def my_hash_creator(para1, para2)
-# #   new_hash = {
-# #     para1: para2
-# #   }
-# >>>>>>> eb880f25c5d7c613ed4dabc1ce916eab70eaa6b6
+# def my_hash_creator(para1, para2)
+#   new_hash = {
+#     para1 => para2
+#   }
+
 end
 
 def read_from_hash (hash, key)
