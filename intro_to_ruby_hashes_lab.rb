@@ -22,7 +22,7 @@ def id_generator
   }
 end
 
-# <<<<<<< HEAD
+
 # def my_hash_creator(key, value)
   #  {key => value}
 def my_hash_creator(para1, para2)
