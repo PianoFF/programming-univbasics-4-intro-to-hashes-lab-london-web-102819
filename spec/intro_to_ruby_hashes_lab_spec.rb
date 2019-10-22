@@ -70,13 +70,7 @@ describe "reading data from a hash" do
 #     puts hash["key"]
 #   end
 # end
-=======
-def read_from_hash (hash, key)
-  if hash["key"]
-    puts hash["key"]
-  end
-end
->>>>>>> eb880f25c5d7c613ed4dabc1ce916eab70eaa6b6
+
     it "returns nil if the key is not found in the provided hash" do
       expect(read_from_hash({age: 31}, :name)).to eq(nil)
     end
